@@ -1,0 +1,39 @@
+body {
+		background-color: #329da8;
+}
+		
+	img {
+		padding:5px 10px 5px 0px
+}	
+	
+h1, h2 {
+		border-bottom:	1px solid black;
+		border-bottom-color:	
+}
+
+h1, h2 {
+	font-family: cursive;
+	color:	
+	}
+
+.guarantee {
+	border-color:	white;
+	border-width:	2px;
+	border-style:	inset;
+	background-color:	#53c0c9;
+	color:	black;
+	padding:	15px;
+	margin:	10px;
+	box-shadow:	15px 15px 10px;
+}
+
+.list {
+	border-color:	white;
+	border-width:	2px;
+	border-style:	inset;
+	margin:	10px;
+	padding:	25px;
+	background-color:	#53c0c9;
+	box-shadow:	20px 20px 10px;
+}
+
