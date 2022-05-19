@@ -1,39 +1,118 @@
 body {
-		background-color: #329da8;
+	background-color: #329da8;
+	font-family: "Lato", sans-serif;
 }
-		
-	img {
-		padding:5px 10px 5px 0px
+
+#header {
+	font-weight: bolder;
+	margin:	0px 10px 10px 10px;
+	border: solid;
+	background:	#53c0c9 url(images/clashroyale.jfif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	box-shadow:	5px 5px 5px 2px;
+}
+
+#footer {
+	background-color:	#53c0c9;
+	text-align:	center;
+	padding:	15px 10px 10px 10px;
+	margin-top:	10px;
+	font-size:	90%;
+	font-weight:	bolder;
+	border: solid;
+	box-shadow:	5px 5px 5px 2px;
+}
+
+img {
+	padding:5px 10px 5px 0px
 }	
-	
-h1, h2 {
-		border-bottom:	1px solid black;
-		border-bottom-color:	
+
+h2 {
+	border-bottom: 1px solid black;
+
 }
+
 
 h1, h2 {
 	font-family: cursive;
-	color:	
-	}
+	font-weight:	bold;
+}
 
 .guarantee {
-	border-color:	white;
+	border-color:	black;
 	border-width:	2px;
-	border-style:	inset;
+	border-style:	solid;
 	background-color:	#53c0c9;
 	color:	black;
 	padding:	15px;
 	margin:	10px;
-	box-shadow:	15px 15px 10px;
+	box-shadow: 5px 5px 5px 2px;
 }
 
 .list {
-	border-color:	white;
+	border-color:	black;
 	border-width:	2px;
-	border-style:	inset;
+	border-style:	solid;
 	margin:	10px;
 	padding:	25px;
 	background-color:	#53c0c9;
-	box-shadow:	20px 20px 10px;
+	box-shadow: 5px 5px 5px 2px;
 }
+
+.arenas	{
+	font-weight:  bolder;
+	font-size:	100%
+}	
+
+a:link	{
+	color: black;
+	text-decoration: none;
+}
+
+a:visisted	{
+	color: white;
+	text-decoration: none;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 
