@@ -7,25 +7,27 @@
 		<link rel="stylesheet" href="Cruisin.css">
    </head>
    <body>
-  <nav id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="arena1-3.html#1">Goblin Stadium</a>
-  <a href="arena1-3.html#2">Bone Pit</a>
-  <a href="arena1-3.html#3">Barbarian Bowl</a>
-  <a href="arena4-6.html#1">PEKKAS Playhouse</a>
-  <a href="arena4-6.html#2">Spell Valley</a>
-  <a href="arena4-6.html#3">Builders Workshop</a>
-</nav>
+  <nav id="mySidenav" class="sidenav" onclick="closeNav()">
+		<p class="noselect" id="navInstructions">*Click anywhere outside of the portal links to close fast travel*</p>
+		<a href="arena1-3.html#1" class="source">Goblin Stadium<span class="target">&#8594;</span></a>
+		<a href="arena1-3.html#2" class="source">Bone Pit<span class="target">&#8594;</span></a>
+		<a href="arena1-3.html#3" class="source">Barbarian Bowl<span class="target">&#8594;</span></a>
+		<a href="arena4-6.html#1" class="source">PEKKAS Playhouse<span class="target">&#8594;</span></a>
+		<a href="arena4-6.html#2" class="source">Spell Valley<span class="target">&#8594;</span></a>
+		<a href="arena4-6.html#3" class="source">Builders Workshop<span class="target">&#8594;</span></a>
+	</nav>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Fast Travel</span>
+<span onclick="openNav()" class="noselect" id="openNav">&#9776; Fast Travel</span>
 
 <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "100%";
+	document.getElementById("navInstructions").style.visibility = "visible";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("navInstructions").style.visibility = "hidden";
 }
 </script>
       <div id="header">
