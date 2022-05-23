@@ -5,15 +5,48 @@
 		<link rel="stylesheet" href="cruisin.css">
 	</head>
 	<body>
+	  <nav id="mySidenav" class="sidenav" onclick="closeNav()">
+		<p class="noselect" id="navInstructions">*Click anywhere outside of the portal links to close fast travel*</p>
+		<a href="index.html" class="source">Home Page<span class="target">&#8594;</span></a>
+		<a href="arena1-3.html#1" class="source">Goblin Stadium<span class="target">&#8594;</span></a>
+		<a href="arena1-3.html#2" class="source">Bone Pit<span class="target">&#8594;</span></a>
+		<a href="arena1-3.html#3" class="source">Barbarian Bowl<span class="target">&#8594;</span></a>
+		<a href="arena4-6.html#1" class="source">PEKKAS Playhouse<span class="target">&#8594;</span></a>
+		<a href="arena4-6.html#2" class="source">Spell Valley<span class="target">&#8594;</span></a>
+		<a href="arena4-6.html#3" class="source">Builders Workshop<span class="target">&#8594;</span></a>
+		<a href="arena7-9.html#1" class="source">Royale Arena<span class="target">&#8594;</span></a>
+		<a href="arena7-9.html#2" class="source">Frozen Peak<span class="target">&#8594;</span></a>
+		<a href="arena7-9.html#3" class="source">Jungle Arena<span class="target">&#8594;</span></a>
+		<a href="arena10-12.html#1" class="source">Hog Mountain<span class="target">&#8594;</span></a>
+		<a href="arena10-12.html#2" class="source">Electro Valley<span class="target">&#8594;</span></a>
+		<a href="arena10-12.html#3" class="source">Spooky Town<span class="target">&#8594;</span></a>
+		<a href="arena13-15.html#1" class="source">Rascals Hideout<span class="target">&#8594;</span></a>
+		<a href="arena13-15.html#2" class="source">Serenity Peak<span class="target">&#8594;</span></a>
+		<a href="arena13-15.html#3" class="source">Legendary Arena<span class="target">&#8594;</span></a>
+	</nav>
+
+<span onclick="openNav()" class="noselect" id="openNav">&#9776; Fast Travel</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+	document.getElementById("navInstructions").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("navInstructions").style.visibility = "hidden";
+}
+</script>
 	<div id="header">
 		<h1>Tips and decks for Arenas 13-15</h1>
 	</div>
+	
 		<h2>Arena 13</h2><img src="images/arena13.jfif" class="guarantee">>
 		<p class="guarantee"> WIP</p>
 		<h2>Arena 14</h2><img src="images/arena14.jfif" class="guarantee">>
 		<p class="guarantee"> WIP</p>
 		<h2>Arena 15</h2><img src="images/arena15.jfif" class="guarantee">>
 		<p class="guarantee"> WIP</p>
-		<a href="index.html" class="backToHome">Back to Home &#8594;</a>
 	</body>
 </html>
